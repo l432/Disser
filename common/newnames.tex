@@ -1,0 +1,177 @@
+% Новые переменные, которые могут использоваться во всём проекте
+% ГОСТ 7.0.11-2011
+% 9.2 Оформление текста автореферата диссертации
+% 9.2.1 Общая характеристика работы включает в себя следующие основные структурные
+% элементы:
+% актуальность темы исследования;
+\newcommand{\actualityTXT}{Актуальність темы.}
+% степень ее разработанности;
+%\newcommand{\progressTXT}{Степень разработанности темы.}
+% цели и задачи;
+\newcommand{\aimTXT}{Метою}
+\newcommand{\tasksTXT}{задачі}
+% научную новизну;
+\newcommand{\noveltyTXT}{Наукова новизна:}
+% теоретическую и практическую значимость работы;
+%\newcommand{\influenceTXT}{Теоретическая и практическая значимость}
+% или чаще используют просто
+%\newcommand{\influenceTXT}{Практическая значимость}
+% методологию и методы исследования;
+%\newcommand{\methodsTXT}{Mетодология и методы исследования.}
+% положения, выносимые на защиту;
+%\newcommand{\defpositionsTXT}{Основные положения, выносимые на~защиту:}
+% степень достоверности и апробацию результатов.
+%\newcommand{\reliabilityTXT}{Достоверность}
+%\newcommand{\probationTXT}{Апробация работы.}
+
+%\newcommand{\contributionTXT}{Личный вклад.}
+%\newcommand{\publicationsTXT}{Публикации.}
+
+
+\newcommand{\authorbibtitle}{Список публікацій здобувача за темою дисертації}
+%\newcommand{\vakbibtitle}{В изданиях из списка ВАК РФ}
+%\newcommand{\notvakbibtitle}{В прочих изданиях}
+%\newcommand{\confbibtitle}{В сборниках трудов конференций}
+\newcommand{\fullbibtitle}{Список використаних джерел} % (ГОСТ Р 7.0.11-2011, 4)
+
+
+
+%%% Переопределение именований %%%
+\renewcommand{\contentsname}{Зміст} % (ГОСТ Р 7.0.11-2011, 4)
+\renewcommand{\figurename}{Рисунок} % (ГОСТ Р 7.0.11-2011, 5.3.9)
+\renewcommand{\tablename}{Таблиця} % (ГОСТ Р 7.0.11-2011, 5.3.10)
+\renewcommand{\listfigurename}{Перелік рисунків}
+\renewcommand{\listtablename}{Перелік таблиць}
+\renewcommand{\bibname}{\fullbibtitle}
+%\addto{\captionukrainian}{\renewcommand{\bibname}{\fullbibtitle}}
+\renewcommand{\bibsection}{\chapter*{\fullbibtitle}\addcontentsline{toc}{chapter}{\fullbibtitle}}
+%\renewcommand{\bibname}{Привіт}
+%\renewcommand{\refname}{\fullbibtitle}
+
+%%% Основные сведения %%%
+\newcommand{\thesisAuthorLastName}{\todo{Оліх}}
+\newcommand{\thesisAuthorOtherNames}{\todo{Олег Ярославович}}
+\newcommand{\thesisAuthorInitials}{\todo{О.\,Я.}}
+%\newcommand{\thesisAuthor}             % Диссертация, ФИО автора
+%{%
+%    \texorpdfstring{% \texorpdfstring takes two arguments and uses the first for (La)TeX and the second for pdf
+%        \thesisAuthorLastName~\thesisAuthorOtherNames% так будет отображаться на титульном листе или в тексте, где будет использоваться переменная
+%    }{%
+%        \thesisAuthorLastName, \thesisAuthorOtherNames% эта запись для свойств pdf-файла. В таком виде, если pdf будет обработан программами для сбора библиографических сведений, будет правильно представлена фамилия.
+%    }
+%}
+\newcommand{\thesisAuthor}             % Диссертация, ФИО автора
+{\thesisAuthorLastName~\thesisAuthorOtherNames}% так будет отображаться на титульном листе или в тексте, где будет использоваться переменная
+
+\newcommand{\thesisAuthorShort}        % Диссертация, ИОФ автора инициалами
+{\thesisAuthorInitials~\thesisAuthorLastName}
+
+\newcommand{\thesisAuthorFIO}        % Диссертация, ФИО автора инициалами
+{\thesisAuthorLastName~\thesisAuthorInitials}
+
+\newcommand{\thesisAuthorFIOen}        % Диссертация, ФИО автора инициалами
+{\todo{Olikh~O.\,Ya.}}
+
+
+\newcommand{\thesisUdk}                % Диссертация, УДК
+{\todo{534.29, 537.312.5/.6/.9}}
+\newcommand{\thesisTitle}              % Диссертация, название
+{\todo{Акусто--індуковані ефекти в опромінених та неопромінених напівпровідникових структурах}}
+\newcommand{\thesisSpecialtyNumber}    % Диссертация, специальность, номер
+{\todo{104}}
+\newcommand{\thesisSpecialtyTitle}     % Диссертация, специальность, название
+{\todo{Фізика та астрономія}}
+\newcommand{\thesisKnowledgeTitle}     % Диссертация, галузь знань
+{\todo{Природничі науки}}
+\newcommand{\thesisKnowledgeNumber}     % Диссертация, шифр галузі знань
+{\todo{10}}
+
+\newcommand{\thesisDegree}             % Диссертация, ученая степень
+{\todo{доктора фізико-математичних наук}}
+\newcommand{\thesisDegreeShort}        % Диссертация, ученая степень, краткая запись
+{\todo{д-р~фіз.-мат. наук}}
+\newcommand{\thesisCity}               % Диссертация, город написания диссертации
+{\todo{Київ}}
+\newcommand{\thesisCityEn}               % Диссертация, город написания диссертации
+{\todo{Kyiv}}
+\newcommand{\thesisYear}               % Диссертация, год написания диссертации
+{\todo{2018}}
+\newcommand{\thesisOrganization}       % Диссертация, организация
+{\todo{Київський національний університет імені Тараса Шевченка}}
+%\newcommand{\thesisOrganizationShort}  % Диссертация, краткое название организации для доклада
+%{\todo{НазУчДисРаб}}
+
+\newcommand{\thesisOrganizationEn}       % Диссертация, организация
+{\todo{Taras Shevchenko National University of Kyiv}}
+
+
+\newcommand{\thesisInOrganization}     % Диссертация, организация в предложном падеже: Работа выполнена в ...
+{\todo{Київському національному університеті імені Тараса Шевченка}}
+
+\newcommand{\thesisMON}       % Диссертация, организация
+{\todo{Міністерство освіти і науки України}}
+
+
+
+\newcommand{\supervisorFio}            % Научный руководитель, ФИО
+{\todo{Іванов Іван Іванович}}
+\newcommand{\supervisorRegalia}        % Научный руководитель, регалии
+{\todo{доктор фізико--математичних наук, професор}}
+\newcommand{\supervisorFioShort}       % Научный руководитель, ФИО
+{\todo{І.\,І.~Іванов}}
+\newcommand{\supervisorRegaliaShort}   % Научный руководитель, регалии
+{\todo{д-р~фіз.-мат. наук,~професор}}
+
+
+\newcommand{\opponentOneFio}           % Оппонент 1, ФИО
+{\todo{Фамилия Имя Отчество}}
+\newcommand{\opponentOneRegalia}       % Оппонент 1, регалии
+{\todo{доктор физико-математических наук, профессор}}
+\newcommand{\opponentOneJobPlace}      % Оппонент 1, место работы
+{\todo{Не очень длинное название для места работы}}
+\newcommand{\opponentOneJobPost}       % Оппонент 1, должность
+{\todo{старший научный сотрудник}}
+
+\newcommand{\opponentTwoFio}           % Оппонент 2, ФИО
+{\todo{Фамилия Имя Отчество}}
+\newcommand{\opponentTwoRegalia}       % Оппонент 2, регалии
+{\todo{кандидат физико-математических наук}}
+\newcommand{\opponentTwoJobPlace}      % Оппонент 2, место работы
+{\todo{Основное место работы c длинным длинным длинным длинным названием}}
+\newcommand{\opponentTwoJobPost}       % Оппонент 2, должность
+{\todo{старший научный сотрудник}}
+
+\newcommand{\leadingOrganizationTitle} % Ведущая организация, дополнительные строки
+{\todo{Федеральное государственное бюджетное образовательное учреждение высшего профессионального образования с~длинным длинным длинным длинным названием}}
+
+\newcommand{\defenseDate}              % Защита, дата
+{\todo{DD mmmmmmmm YYYY~г.~в~XX часов}}
+\newcommand{\defenseCouncilNumber}     % Защита, номер диссертационного совета
+{\todo{Д\,123.456.78}}
+\newcommand{\defenseCouncilTitle}      % Защита, учреждение диссертационного совета
+{\todo{Название учреждения}}
+\newcommand{\defenseCouncilAddress}    % Защита, адрес учреждение диссертационного совета
+{\todo{Адрес}}
+\newcommand{\defenseCouncilPhone}      % Телефон для справок
+{\todo{+7~(0000)~00-00-00}}
+
+\newcommand{\defenseSecretaryFio}      % Секретарь диссертационного совета, ФИО
+{\todo{Фамилия Имя Отчество}}
+\newcommand{\defenseSecretaryRegalia}  % Секретарь диссертационного совета, регалии
+{\todo{д-р~физ.-мат. наук}}            % Для сокращений есть ГОСТы, например: ГОСТ Р 7.0.12-2011 + http://base.garant.ru/179724/#block_30000
+
+\newcommand{\synopsisLibrary}          % Автореферат, название библиотеки
+{\todo{Название библиотеки}}
+\newcommand{\synopsisDate}             % Автореферат, дата рассылки
+{\todo{DD mmmmmmmm YYYY года}}
+
+% To avoid conflict with beamer class use \providecommand
+\providecommand{\keywords}%            % Ключевые слова для метаданных PDF диссертации и автореферата
+{ультразвук, гамма-опромінення, кремній, бар'єрні структури, акусто--дефектна взаємодія, перенесення заряду, оборотні зміни}
+
+\providecommand{\keywordsEn}%            % Ключевые слова для метаданных PDF диссертации и автореферата
+{ultrasound, gamma-rays, silicon, barrier structures, acousto-defect interaction, charge transport, reversible change}
+
+\renewcommand{\chaptername}{Розділ}
+\renewcommand{\appendixname}{Додаток} % (ГОСТ Р 7.0.11-2011, 5.7)
+

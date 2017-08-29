@@ -1,3 +1,7 @@
 https://github.com/AndreyAkinshin/Russian-Phd-LaTeX-Dissertation-Template
 
 http://dkhramov.dp.ua/Comp.LaTeXBibliography
+
+http://blog.harrix.org/article/444
+
+http://kievoi.ippo.kubg.edu.ua/kievoi/LaTeX/LaTeX.html

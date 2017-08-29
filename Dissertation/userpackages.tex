@@ -1,3 +1,4 @@
+\usepackage{afterpage}
 \usepackage{tabu, tabulary}  %таблицы с автоматически подбирающейся шириной столбцов
 \usepackage{fr-longtable}    %ради \endlasthead
 
@@ -37,10 +38,10 @@
 % calling them post-commit and post-merge, and you’re done. As before,
 % users of unix-like systems should ensure these files are marked as
 % executable.
-\ifnumequal{\value{draft}}{1}{% Черновик
-   \IfFileExists{.git/gitHeadInfo.gin}{
-      \usepackage[mark,pcount]{gitinfo2}
-      \renewcommand{\gitMark}{rev.\gitAbbrevHash\quad\gitCommitterEmail\quad\gitAuthorIsoDate}
-      \renewcommand{\gitMarkFormat}{\rmfamily\color{Gray}\small\bfseries}
-   }{}
-}{}
+%\ifnumequal{\value{draft}}{1}{% Черновик
+%   \IfFileExists{.git/gitHeadInfo.gin}{
+%      \usepackage[mark,pcount]{gitinfo2}
+%      \renewcommand{\gitMark}{rev.\gitAbbrevHash\quad\gitCommitterEmail\quad\gitAuthorIsoDate}
+%      \renewcommand{\gitMarkFormat}{\rmfamily\color{Gray}\small\bfseries}
+%   }{}
+%}{}
