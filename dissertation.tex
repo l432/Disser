@@ -109,11 +109,11 @@ g6SSDA (трикутники) та g7SSDA (кола),
 \center
 \includegraphics[width=0.9\textwidth]{figFbNrad_SDA}
 \caption{\label{figFbNrad_SDA}
-Залежності величин $\Phi_{b1}$ (криві 1 та 4, заповнені точки) та 
+Залежності величин $\Phi_{b1}$ (криві 1 та 4, заповнені точки) та
 $n_{\mathrm{id},1}^{-1}-1$ (криві 2 та 5, незаповнені точки) від оберненої температури
 та залежність ВБШ від фактору неідеальності (криві 3 та 6, напівзаповнені точки)
 $D$, рад: 10$^6$ (1--3), 10$^7$ (4--6).
-Точки --- експеримент, 
+Точки --- експеримент,
 прямі --- лінійна апроксимація за методом найменших квадратів.
 }%
 \end{figure}
@@ -135,7 +135,7 @@ $D$, рад: 0 (1), 10$^6$ (2), 10$^7$ (3).
 \center
 \includegraphics[width=0.65\textwidth]{figFb2Trad_SDA}
 \caption{\label{figFb2Trad_SDA}
-Температурні залежності висоти бар'єру, розрахованої в рамках моделі ТЕ 
+Температурні залежності висоти бар'єру, розрахованої в рамках моделі ТЕ
 для низькотемпературної компоненти струму зразків SSDA (1, квадрати),
 g6SSDA (2, трикутники) та g7SSDA (3, кола).
 Прямі  --- лінійна апроксимація (суцільна для SSDA, пунктирна для g6SSDA та
@@ -144,8 +144,30 @@ g6SSDA (2, трикутники) та g7SSDA (3, кола).
 \end{figure}
 
 
+\begin{table}
+%\renewcommand{\arraystretch}{1.3}
+\caption{Параметри, визначені з ВАХ структур Al$-n-n^+$--Si---Al в наближенні теорії TE}
+\label{tabSDAParRad}
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+$D$, рад & 0&10$^6$&10$^7$\\ \hline
+Діапазон температур, K&230--330&260--330&260--330\\ \hline
+$\sigma_{\Phi0}$, мВ&$40\pm5$&$100\pm1$&--\\ \hline
+$\rho_2$, $10^{-2}$&$12\pm1$&$27\pm1$&--\\ \hline
+$\rho_3$, мВ&$8,0\pm0,3$&$19,0\pm0,4$&--\\ \hline
+$\Phi_b^0$, мВ \textsuperscript{ a)}&$663\pm3$&$772\pm2$&--\\ \hline
+$\Phi_b^0$, мВ \textsuperscript{ б)}&$662\pm3$&$772\pm2$&$710\pm3$\\ \hline
+$A^*$, A$\cdot$см$^{-2}\cdot$K$^{-2}$&$112\pm20$&$115\pm20$&$1200\pm300$\\
+\hline
+\multicolumn{4}{l}{\textsuperscript{ a)} \emph{за залежністю $\Phi_b=f(\frac{1}{2kT})$}} \\
+\multicolumn{4}{l}{\textsuperscript{ б)} \emph{за модифікованою залежністю Річардсона (\ref{eqRich:Mod})}} \\
+\end{tabular}
+\end{table}
+
+
 \begin{equation}\label{eqIs:TFE}
-  I_S=\frac{A^*T\sqrt{\pi{E_{00}}(\Phi_b^\mathrm{TFE}-V_n)}}{k\cosh\left(\frac{E_{00}}{kT}\right)}\cdot 
+  I_s=\frac{A^*T\sqrt{\pi{E_{00}}(\Phi_b^\mathrm{TFE}-V_n)}}{k\cosh\left(\frac{E_{00}}{kT}\right)}\cdot
   \exp\left[-\frac{V_n}{kT}-\frac{(\Phi_b^\mathrm{TFE}-V_n)}{n_{\mathrm{id}}^\mathrm{T}kT}\right]\,,
 \end{equation}
 
@@ -155,6 +177,24 @@ g6SSDA (2, трикутники) та g7SSDA (3, кола).
    \chi&=&\frac{\beta+k\ln(N_c/N_d)}{E_{00}}\,, \label{eqKsi:Dat}
 \end{eqnarray}
 
+\begin{table}
+\caption{Параметри, визначені з ВАХ структур Al$-n-n^+$--Si---Al в наближенні теорії DAT}
+\label{tabSDAParRad:DAT}
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+$D$, рад &10$^6$ \textsuperscript{ a)}&10$^7$ \textsuperscript{ a)}&10$^7$ \textsuperscript{ б)}\\ \hline
+Діапазон температур, K&120--240&110--130&110--210\\
+$E_{00}$, мВ&$17,8\pm0,5$&$23,5\pm0,5$&$80\pm10$\\
+$\chi_\mathrm{calc}$, $10^{-3}$ K$^{-1}$&$39\pm3$&$26\pm2$&$8\pm1$\\
+$\chi_\mathrm{fit}$, $10^{-3}$ K$^{-1}$&$73\pm6$&$42\pm4$&$8\pm1$\\
+$I_{s0}$, $10^{-14}$A&$5\pm0,5$&$13\pm3$&$(17\pm2)\cdot10^{5}$\\
+\hline
+\multicolumn{4}{l}{\textsuperscript{ a)}\emph{для високотемпературної компоненти струму}}\\
+\multicolumn{4}{l}{\textsuperscript{ б)}\emph{для низькотемпературної компоненти струму}}\\
+\end{tabular}
+\end{table}
+
 
 \begin{figure}
 \center
@@ -163,10 +203,10 @@ g6SSDA (2, трикутники) та g7SSDA (3, кола).
 Температурні залежності струму насичення високотемпературної (а, незаповнені точки)
 та низькотемпературної (б, напівзаповнені точки) компонент.
 $D$, рад: 10$^6$~(1, 3, трикутники), 10$^7$~(2, 4, кола).
-Лінії розраховані за формулою (\ref{eqIs:DAT}). 
+Лінії розраховані за формулою (\ref{eqIs:DAT}).
 $\chi$, $10^{-3}$~K$^{-1}$: 73~(A), 42~(B), 26~(C).
 $I_s$, A: $5\cdot10^{-14}$~(A),
-$1,3\cdot10^{-13}$~(B), 
+$1,3\cdot10^{-13}$~(B),
 $1,7\cdot10^{-8}$~(C).
 }%
 \end{figure}
@@ -180,7 +220,7 @@ $1,7\cdot10^{-8}$~(C).
 \caption{\label{figNTrad_SDA}
 Температурна залежність оберненого нахилу ВАХ для високотемпературної (1--3)
 та низькотемпературної (4) складових струму.
-$D$, рад: $0$ (1), $10^6$ (2), $10^7$ (3, 5).
+$D$, рад: $0$ (1), $10^6$ (2), $10^7$ (3, 4).
 Точки --- експеримент,
 суцільна лінія розрахована відповідно до формули (\ref{eqN_T:TE}) з $T_0=12$~K,
 пунктирні --- з використанням виразу (\ref{eqN_T:TFE}) при
@@ -208,6 +248,82 @@ Ultras
 
 
 \subsection{Зворотній струм у $\gamma$--опромінених кремнієвих діодах Шотки}
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.8\textwidth]{figIV_SDArRad}
+\caption{\label{figIV_SDArRad}
+Зворотні характеристики структур SSDA при температурах 130~K (незаповнені точки)
+та 330~K (напівзаповнені точки).
+$D$, рад: 0 (квадрати), $10^6$ (трикутники), $10^7$ (кола).
+}%
+\end{figure}
+
+\begin{eqnarray}
+\label{eqIrRad}
+I_R(T,V_R)&=&C_\mathrm{TE}(V_R)T^2\exp\left[-\frac{E_\mathrm{TE}(V_R)}{kT}\right]+I_\mathrm{FN}(V_R)+I_\mathrm{PAT}(T,V_R)\,,
+\end{eqnarray}
+
+\begin{figure}
+\center
+\includegraphics[width=0.65\textwidth]{figIrTErad_SDA}
+\caption{\label{figIrTErad_SDA}
+Польові залежності характеристичної енергії ТЕ складової зворотного струму структур g6SSDA (трикутники) та g7SSDA (кола).
+Точки --- експеримент, прямі --- лінійна апроксимація за методом найменших квадратів.
+}%
+\end{figure}
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.65\textwidth]{figIrFNrad_SDA}
+\caption{\label{figIrFNrad_SDA}
+Залежність температуро--незалежної компоненти зворотного струму
+в координатах Фаулера--Нордгейма
+структур SSDA (квадрати), g6SSDA (трикутники) та g7SSDA (кола).
+Точки --- експеримент, пряма --- лінійна апроксимація за методом найменших квадратів.
+}%
+\end{figure}
+
+
+\begin{equation}\label{eqPAT}
+    F_0^{\,-2/3}=\left[\frac{d(\ln I_\mathrm{PAT})}{d(F_m^2)}\right]^{1/3}\propto \sqrt[3]{\frac{q^2\hbar^2}{24k^3m^*}}\,\frac{1}{T}\,.
+\end{equation}
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.65\textwidth]{figIrPATrad_SDA}
+\caption{\label{figIrPATrad_SDA}
+Польові залежності компоненти зворотнього струму $I_\mathrm{PAT}$ при різних температурах для структури g7SSDA.
+Точки --- експеримент, пряма --- лінійна апроксимація за методом найменших квадратів.
+}%
+\end{figure}
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.65\textwidth]{figIrPATF0rad_SDA}
+\caption{\label{figIrPATF0rad_SDA}
+Температурна залежність коефіцієнту нахилу польової залежності компоненти зворотнього струму $I_\mathrm{PAT}$. 
+Точки – експеримент, лінії – лінійна апроксимація за методом найменших квадратів.
+}%
+\end{figure}
+
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.8\textwidth]{figeIrRad_SDA}
+\caption{\label{figeIrRad_SDA}
+Залежність відносного внеску у зворотний струм
+ТЕ (криві 1 та 2), FN (3 та 4) і PAT (5 та 6)
+від температури при $V_R=0,5$~В (1, 3 та 5) і $V_R=3$~В (2, 4 та 6).
+$D$, рад: $10^6$ (а), $10^7$ (б).
+}%
+\end{figure}
+
 
 
 \section{Вплив ультразвукового навантаження на перенесення заряду в $\gamma$--опромінених та неопромінених структурах Al$-n-n^+$--Si---Al\label{MSSi_USL}}
