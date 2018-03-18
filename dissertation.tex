@@ -68,6 +68,15 @@ FCOM
 \cite{Rjanov1981,paton1993,Vinnik1989,ZOHM2000,BHUNIA1998,Bacherikov2003r,Pashkov1994r,Boltovets,Kr1996,Milenin1994,
 BelyaevIntac,ASHKINADZE1996,ProcSPIE,Venger1999,Godwod,ThoricBook,BergBook,Lebed1999,Anikin1991:2,Anikin1991:3,Lebedev2001}
 
+
+SiC
+EK3: Ec-0.34 sigmaN=8e-13 cm2 \cite{Kuznets1997}
+Ec-(0.27-0.29), U- \cite{Hemmingsson}
+
+
+GaAs
+\cite{Neild1991}
+
 \section{Акустоіндуковані корекції вольт-амперних характеристик арсенід галіевих структур з контактом Шотки\label{MSGA}}
 
 \cite{SBD:rizn}
@@ -77,6 +86,101 @@ BelyaevIntac,ASHKINADZE1996,ProcSPIE,Venger1999,Godwod,ThoricBook,BergBook,Lebed
 акустостимулированной релаксации внутренних механических напряжений в гетеросистеме \cite{BritunFTT}
 
 \cite{Parchinskii2003r,Ostrov2002FTPr,Singh1994,Evstropov2000,Tseng1987}
+
+
+\begin{figure}[b]
+\center
+\includegraphics[width=0.9\textwidth]{MSGA}%
+\caption{\label{figMSGA}
+Структура зразків GASD.
+}
+\end{figure}
+
+\begin{table}
+\caption{\label{tabUST}Параметри ультразвукових обробок структур Au--TiB$_x$--$n$--$n^+$--GaAs.
+}
+\center
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$f_\mathtt{US}$, МГц&$W_{\mathtt{US}}$, Вт/см$^2$&$T$, K&Тривалість, год &Позначення\\
+%МГц&Вт/см$^2$&$10^{-6}$&нм&K&&\\
+\hline
+4,1&0,8&300&5&U04--08\\ \hline
+4,1&1,8&300&5&U04--18\\ \hline
+4,1&3,1&300&5&U04--31\\ \hline
+9,4&0,5&300&5&U09--05\\ \hline
+9,4&1,6&300&5&U09--16\\ \hline
+30,0&0,3&300&5&U30--03\\ \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.95\textwidth]{figFbn_GA}%
+\caption{\label{figFbn_GA}
+Визначені величини ВБШ та фактору неідеальності для набору структур Au--TiB$_x$--$n$--$n^+$--GaAs
+з одного зразка до (порожні точки) та після УЗО.
+$f_\mathtt{US}$,~МГц: 4,1 (а), 9,4 (б), 30 (в).
+На частині (г) показані Середні значення параметрів на наборі діодів з одного зразка,
+позначення точок співпадають з попередніми частинами.
+}
+\end{figure}
+
+
+\begin{equation}\label{eqIR1:GA}
+I_R=I_{s,t}\exp\left(\frac{qV_R}{\xi}\right),
+\end{equation}
+
+\begin{equation}\label{eqIR2:GA}
+I_R=I_{s,TE}\exp\left(a_{TE}V_R^{1/4}\right),
+\end{equation}
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.75\textwidth]{figIV_GA}%
+\caption{\label{figIV_GA}
+GASD.
+Типові зворотні гілки ВАХ для діодів першої групи (криві 1 та 2) і другої (3 та 4).
+Криві 1 та 3 виміряні до УЗО, криві 2 та 4 --- після U04--18.
+%$W_\mathtt{US}=1,8$~Вт/см$^2$, $f_\mathtt{US}=4,1$~МГц.
+Суцільні лінії --- апроксимація частини ВАХ згідно з формулою~(\ref{eqIR2:GA}),
+пунктирні  --- згідно з (\ref{eqIR1:GA}).
+%При апроксимації використовувалися наступні параметри:
+%$I_{s,t}$, A: $1,1\cdot10^{-11}$ (1), $9,5\cdot10^{-11}$ (2), $5,3\cdot10^{-8}$ (3), $4,9\cdot10^{-9}$ (1);
+%$\xi$, еВ: 0,40 (1), 0,43 (2).
+}
+\end{figure}
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.95\textwidth]{figIrG_GA}%
+\caption{\label{figIrG_GA}
+Порівняльні гістограми розкиду величини зворотного струму (при $V_R=2$~В)
+для структур Au--TiB$_x$--$n$--$n^+$--GaAs до УЗО (а) та після U04--18 (б).
+%$W_\mathtt{US}=1,8$~Вт/см$^2$, $f_\mathtt{US}=4,1$~МГц.
+По вертикалі відкладена частка діодів, для яких струм знаходиться у відповідному діапазоні.
+%Загальна кількість діодів --- 45.
+}
+\end{figure}
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.75\textwidth]{figIr30_GA}%
+\caption{\label{figIr30_GA}
+Зворотні гілки ВАХ до УЗО (1) та після U30--03 (2).
+%$W_\mathtt{US}=0,3$~Вт/см$^2$, $f_\mathtt{US}=30$~МГц.
+Точки --- експеримент,
+лінії --- апроксимація відповідно до (\ref{eqIR1:GA}) з наступними параметрами
+$I_{s,t}$, $10^{-9}$~A: 7,6 (1), 1,6 (2);
+$\xi$, еВ: 0,34 (1), 0,43 (2).
+}
+\end{figure}
+
 
 \section{Відновлення робочих характеристик структур кремній--метал, опромінених $\gamma$--квантами}
 
