@@ -721,7 +721,7 @@ $0,44$&$2\cdot10^{-15}$&комплекс з V$_\text{As}$&DLTS&так&\cite{KolF
 
 УЗО структур проводились при кімнатних температурах, при цьому в зразках збуджувалися повздовжні АХ.
 Обробки проводилися в етиловому спирті, який і використовувався для створення акустичного контакту.
-Детальні параметри УЗО наведено в Таблиці~\ref{tabUST}.
+Детальні параметри УЗО наведено в Таблиці~\ref{tabUST}, зокрема там вказано тривалість $t_\mathtt{UST}$ впливу пружних коливань
 Так як УЗО викликали незворотні зміни параметрів ДШ, то обробка кожного зі зразків проводилася лише з використанням однієї частоти.
 
 \begin{table}
@@ -730,7 +730,7 @@ $0,44$&$2\cdot10^{-15}$&комплекс з V$_\text{As}$&DLTS&так&\cite{KolF
 \center
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-$f_\mathtt{US}$, МГц&$W_{\mathtt{US}}$, Вт/см$^2$&$T$, K&Тривалість, год &Позначення\\
+$f_\mathtt{US}$, МГц&$W_{\mathtt{US}}$, Вт/см$^2$&$T$, K&$t_\mathtt{UST}$, год &Позначення\\
 \hline
 4,1&0,8&300&5&U04--08\\ \hline
 4,1&1,8&300&5&U04--18\\ \hline
@@ -827,9 +827,11 @@ $a_\mathtt{tun}$, В$^{-1/2}$: 9,5 (1), 9,7 (2), 10,5 (3), 10,1 (4).
 Так, для діодів з невисоким початковим зворотнім струмом після УЗО спостерігається зростання $I_R$ при тому ж значенні прикладеної напруги на $1\div2$ порядки,
 тоді як для ДШ з другої групи та сама УЗО спричинює зменшення величини $I_R$ в $10\div500$ разів --- див. Рис.~\ref{figIV_GA}.
 Як наслідок, УЗО викликає підвищення однорідності характеристик на всьому масиві діодів.
-Ілюстрацією цього є Рис.~\ref{figIrG_GA}, що показує залежність величини частки діодів, для яких зворотній струм знаходиться в певному інтервалі $\nu_\mathtt{SD}$,
+Ілюстрацією цього є Рис.~\ref{figIrG_GA}, на якому наведено залежність величини частки діодів, для яких зворотній струм знаходиться в певному інтервалі $\nu_\mathtt{SD}$,
 від величини цього струму до та після УЗО.
-В останньому випадку фігура значно вужча, що свідчить про те, що УЗО покращує такий важливий технологічний параметр при масовому виготовленні структур як однорідність параметрів.
+Залежності апроксимовано відповідно до розподілу Гауса, параметри апроксимації приведені у підпису до рисунку.
+Як видно з наведених даних, УЗО спричинює певне підвищення середнього значення зворотного струму, проте суттєво
+покращує такий важливий технологічний параметр при масовому виготовленні структур як однорідність параметрів (дисперсія зменшується в три рази).
 
 \begin{figure}
 \center
@@ -840,6 +842,13 @@ $a_\mathtt{tun}$, В$^{-1/2}$: 9,5 (1), 9,7 (2), 10,5 (3), 10,1 (4).
 %$W_\mathtt{US}=1,8$~Вт/см$^2$, $f_\mathtt{US}=4,1$~МГц.
 По вертикалі відкладена частка діодів, для яких струм знаходиться у відповідному діапазоні.
 Загальна кількість діодів --- 40.
+Лінії --- апроксимація відповідно до розподілу Гауса.
+Середнє значення, А:
+$(2,8\pm0,2)\cdot10^{-8}$ (а),
+$(1,31\pm0,01)\cdot10^{-7}$ (б).
+Дисперсія:
+$9\pm2$ (а),
+$3,3\pm0,2$ (б).
 }
 \end{figure}
 
@@ -962,22 +971,43 @@ U30--03&$10,1\div11,3$&$8,3\div9,8$\\ \hline
 
 
 
-\section{Відновлення робочих характеристик структур кремній--метал, опромінених $\gamma$--квантами}
+\section{Акустовідпал гамма--індукованих дефектів в структурах Si--SiO$_2$--Au}
 
-Радіаційні дефекти, які утворюються в кристалах, можуть ефективно взаємодіяти з пружними коливаннями.
-Одним з проявів цього явища є відпал дефектів за умов УЗО.
+Як вже згадувалося раніше, радіаційні дефекти, які утворюються в кристалах, можуть ефективно взаємодіяти з пружними коливаннями.
+Одним з проявів цього явища є відпал дефектів в результаті УЗО при температурах, значно нижчих ніж це відбувається при без--звуковому нагріванні.
+Подібні процеси спостерігалися в монокристалах кристалах кремнію \cite{OstrovRadSi,Podolian2012r,PodolHivr,YOlikh2007TPLr}, германію \cite{Olikh:FTP1996}, 
+напівровідникових \cite{OlikhProc,OstrovFTTRad} та лужногалоїдних \cite{UST:OstrovCsI} сполук.
+Як правило, подібні процеси пов'язують з розпадом радіаційноутворених комплексів під дією пружних коливань та акустоіндукованою дифузією дефектів до різноманітних стоків.
+Крім того, в літературі показана можливість часткового відновлення за допомогою УЗО параметрів опромінених напівпровідникових поверхнево--бар'єрних структур, таких як, наприклад,
+сонячні елементи \cite{YOlikh2007TPLr} чи світловипромінюючі діоди \cite{US:LED,UST:LED_SM}.
+Найчастіше причиною появи дефектів є $\gamma$--опромінення, проте показана можливість ефективного впливу пружних коливань і на порушення періодичності, викликані
+рентгенівськими променями \cite{UST:OstrovCsI}, нейтронами \cite{Olikh:FTP1996} чи електронами \cite{US:LED,UST:LED_SM}.
+
+З іншого боку, дослідники не оминули своєю увагою і можливість впливу УЗО на властивості таких промислово--важливих структур, як система 
+кремній --- оксид кремнію.
+Зокрема, повідомлено про АІ зміни дефектного стану границі  Si--SiO$_2$ \cite{Ostap:SiO2,UST:Medvid,Zaver:2008r} та часу життя неосновних носіїв в області кремнію,
+що прилягає до контакту \cite{Parchinskii2003r}.
+Крім того, декілька робіт присвячено виявленню наслідків УЗО структур метал--окис--напівпровідник (МОН) на основі кремнію, опромінених $\gamma$--квантами $^{60}$Co \cite{Parchinskii2000r,Parchinskii2006r}.
+Об'єктом досліджень авторів даних робіт були структури Si--SiO$_2$ виготовлені методом термічного окислення пластин кремнію $n$--типу з питомим опором 0,2~Ом$\cdot$см.
+Поглинута доза опромінення складала $10^6$~рад.
+В результаті вимірів ВФХ було зроблено висновок про зменшення ефективного поверхневого заряду та генераційного часу життя в приконтактній області кремнію та незначне
+зростання швидкості поверхневої рекомбінації.
+Автори пов'язують виявлені ефекти з дифузією дефектів та розпадом домішкових асоціатів в акустичному полі, причому зазначають , що виявлені процеси 
+послаблені, порівняно з неопроміненими структурами, внаслідок радіаційностимульваної релаксації напруг в області границі Si--SiO$_2$.
+
+У цьому параграфі представлені результати досліджень впливу УЗО на процеси перенесення заряду в радіаційноопромінених структурах Si--SiO$_2$--Au.
+Метою роботи було з'ясування можливості відновлення працездатності діодів Шотки, створених на основі МОН структур і суттєво деградованих внаслідок опромінення.
+Хоча вищезазначені роботи \cite{Parchinskii2000r,Parchinskii2006r} і були певними експериментальними передумовами для проведення наших досліджень, проте
+підкреслимо що суттєві відмінності представлених результатів полягають у тому, що вони отримані
+а)~для систем зі значно вищою концентрацією радіаційних дефектів;
+б)~при розгляді робочого режиму ДШ, тобто при проходженні струму.
 
 
 
-\cite{Ostap:SiO2} стан границі Si--SiO2, підсилення дифузії водню
-\cite{Ostap:PhotoLum,ostapenko1997} підсилення дифузії водню
-
-
-
-Зразки для досліджень були виготовлені з кристалічного кремнію, вирощеного методом зонної плавки, з питомим опором 4000~Ом$\cdot$см.
-Для легування використовувалися атоми фосфору.
+Зразки для досліджень були виготовлені з кристалічного кремнію, вирощеного методом зонної плавки. 
+Для легування використовувалися атоми фосфору, питомий опір кристалів складав 4000~Ом$\cdot$см.
 З об'ємного матеріалу було вирізано зразки у формі паралелепіпеда розмірами $1\times5\times10$~мм$^3$.
-Для формування структури метал--окис--напівпровідник одна з поверхонь площею 50~мм$^2$ хімічно очищувалася в розчині HF--HNO$_3$--CH$_3$COOH (об'ємне співвідношення компонент 3:5:3),
+Для формування структури МОН одна з поверхонь площею 50~мм$^2$ хімічно очищувалася в розчині HF--HNO$_3$--CH$_3$COOH (об'ємне співвідношення компонент 3:5:3),
 після чого в атмосферному повітрі при $T=300$~К протягом 24~год на ній формувався шар SiO$_2$.
 Надалі шляхом вакуумного напилення на поверхню наносився шар золота (30~мкг/cm$^2$).
 На протилежній грані за допомогою евтектики GaZn створювався омічний контакт.
@@ -987,16 +1017,83 @@ U30--03&$10,1\div11,3$&$8,3\div9,8$\\ \hline
 \center
 \includegraphics[width=0.6\textwidth]{MSSi3}%
 \caption{\label{figMSSi3}
-Структура зразків для дослідження ефектів УЗ відпалу радіаційних дефектів.
+Структура зразків Si--SiO$_2$--Au.
 }
 \end{figure}
 
 Опромінення здійснювалось при кімнатній температурі $\gamma$--квантами $^{60}$Co, доза дорівнювала $5\cdot10^7$~рад.
-Як показали вимірювання, після радіаційного впливу провідність зразків за величиною зменшилась приблизно в 2 рази залишаючись електронною.
+Як показали вимірювання, після еквівалентного опромінення провідність монокристалічних зразків за величиною зменшилась приблизно в 2 рази залишаючись електронною за типом,
+що пов'язано з частковою компенсацією в процесі радіаційного дефектоутворення.
+Зауважимо, що питомий опір досліджених кристалів на чотири порядки більший, ніж в роботах \cite{Parchinskii2000r,Parchinskii2006r}, а отже частка енергетичних втрат, не пов'язанихз іонізацією, для гамма-квантів в нашому випадку значно вища.
+Доза також на півтора порядку вища, і тому очікувана концентрація радіаційних дефектів суттєво вища.
 
-УЗО інтенсивністю 2~Вт/см$^2$ здійснювалась за допомогою LiNbO$3$ п'єзоелектричного перетворювача на частоті 4~МГц.
-Було проведено декілька послідовних УЗО, кожна тривалістю 30~хв.
+
+УЗО інтенсивністю 2~Вт/см$^2$ здійснювалась за допомогою LiNbO$3$ п'єзоелектричного перетворювача.
+У зразку збуджувалися повздовжні хвилі частотою 4~МГц.
+Було проведено дві послідовні УЗО, кожна тривалістю 30~хв.
 Під час УЗО температура зразка не перевищувала 350~К.
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.95\textwidth]{figIV_MIS}%
+\caption{\label{figIV_MIS}
+Прямі (а, в) та зворотні (а, б) ВАХ структур Si--SiO$_2$--Au до (криві 1)
+та після (2--4) опромінення $\gamma$--квантами в напівлогарифмічному (а)
+та подвійному логарифмічному (б, в) масштабах.
+$t_\mathtt{UST}$ , хв: 0 (2), 30 (3), 60 (4).
+$T=300$~K.
+Точки --- експеримент, 
+лінії --- апроксимація за формулою~(\ref{eqSDIV}).
+Параметри апроксимації вказані в Таблиці~\ref{tabMIS}.
+На вставці:
+залежність прямої компоненти струму неопроміненого зразка (при $V>1.6$~В) в координатах Фаулера--Нордгейма;
+пряма --- лінійна апроксимація.
+}%
+\end{figure}
+
+
+\begin{table}
+\caption{\label{tabMIS}Параметри структур Si--SiO$_2$--Au, визначені з ВАХ.
+}
+\center
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\multicolumn{5}{|c|}{Стан структури}\\\hline
+$\gamma$--опромінення&$-$&$+$&$+$&$+$\\ \hline
+$t_\mathtt{UST}$ , хв&0&0&30&60\\ \hline
+\multicolumn{5}{|c|}{Параметр}\\\hline
+$I_s$, $10^{-9}$A & 3,3& 1,1& 4,9& \\ \hline
+$R_s$, $10^{4}$Ом & 1,1& 13& 8,8& \\ \hline
+$n_\mathrm{id}$ & 1,7& 10,3& 9,9& \\ \hline
+$m_\mathrm{F}$ & &1,3& 1,6& 1,8 \\ \hline
+%Параметр&&&&\\
+%УЗО&\multicolumn{2}{c|}{$a_\mathtt{tun}$, В$^{-1/2}$}\\ \cline{2-3}
+%& до УЗО & після УЗО \\
+%\hline
+%U04--18&$9,5\div11,0$&$9,5\div11,0$\\ \hline
+%U09--16&$9,5\div11,3$&$9,3\div10,1$\\ \hline
+%U30--03&$10,1\div11,3$&$8,3\div9,8$\\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{figure}
+\center
+\includegraphics[width=0.65\textwidth]{figEa_MIS}%
+\caption{\label{figEa_MIS}
+Температурна залежність струму в SCLC--області  ($V=0,4$~В)
+$\gamma$--опроміненої структури Si--SiO$_2$--Au до УЗО.
+Точки --- експеримент,
+пряма --- лінійна апроксимація.
+}%
+\end{figure}
+
+
+струм, обмежений  просторовим зарядом (SCLC, space--charge limited current)
+
+
+TAT \cite{TAT:Gilmore,TAT:GopalSST,TAT:Gopal}
 
 
 \cite{PersenkovBook}
@@ -1038,6 +1135,93 @@ s~Nss
 гамма--кванти, до 2е7 рад, максимум спектру поверхневих станів Ес-(0,32+-0,04) ев, що характерно для високих доз -- див попередню
 
 електронне опромінення (n-тип, (100)) --- максимум густини поверхневих станів Ес-0,3 еВ \cite{LaiSiO2}
+
+
+
+Interface trap (Nit) утворюються внаслідок розриву зв'язків $\equiv\!\text{Si}\!-\!\text{H}$ на інтерфейсі Si--SiO$_2$,
+в результаті утворюються $\equiv\text{Si}-N_\text{iT}$, які реєструються як Pb центри.
+Звільнені атоми водню рухаються в об'єм діелектрика.
+За наявності гарячих носіїв заряду при цьому генеруються bulk--oxide trap Not внаслідок розриву $\equiv\!\text{Si}\!-\!\text{O}$.
+Розірвані зв'язки $\equiv\!\text{Si}\!-\!\text{O}$ в об'ємі оксиду викликають появу stress-induced leakage current (SILC).
+However, unlike $\equiv\!\text{Si}\!-\!\text{H}$  bonds, broken $\equiv\!\text{Si}\!-\!\text{O}$ bonds are not known to recover
+at room temperature after the stress is removed.
+В роботі пропонується, що $\equiv\!\text{Si}\!-\!\text{H}$ bonds are broken by holes (and not by electrons). \cite{SiO2:Mahapatra}
+
+
+Гарячі електрони ведуть до звільнення водню з інтерфейсу Si--SiO$_2$,  міграція Н в оксиді викликає появу bulk--oxide trap.
+Механізм SILC --- trap--assisted tunneling
+The results reported so far demonstrate that in the channel hot electron stress conditions there is no correlation between and SILC generation.
+В самій роботі Nit generation is evidently related to stress-induced leakage current (H/D) release \cite{SiO2:Esseni}
+
+SILCs  (This  phenomenon  is  often  referred  to  as  trap-assisted  tunneling ) can  be  best  explained  by  the generation  of  neutral  electron  traps  in  the  oxide  layer.
+These  studies  have  directly  shown  the  relationship  of SILCs  to  the  trap  creation  phenomenon.
+Trapped  holes  or  sites  produced by  trapped-hole  annihilation  by  free  electrons  will  be demonstrated  not  to  contribute  to  SILC  for  most  stressing conditions.
+Since  the  oxide  deterioration  producing  SILC  will  be shown  here  to  be  caused  by  electron  heating  in  the  oxide layer,
+oxide  defect  formation  due  to  hot  carriers  will  be briefly  reviewed.
+The  production  of  interface  states or  traps by  the  annihilation  of  trapped  holes  and/or  their  presence  is
+one  component  of  the  oxide  degradation  process.
+The other  component  is  due  to  the  trap  creation  process  also  caused by  hot  electrons.
+  Also, the  most  significant  component  contributing  to  the  SILC  in the  experiments  discussed here  appears to  be due  to  the  generation  of  the  neutral-electron  traps,  not  the  interface  states and/or  anode positive  charge.
+Also,  generation--recombination  sites  and boron  deactivation  can be produced  in  the Si  substrate by  the hydrogen.
+However,  during  trap  creation,  many  different  defect  sites  with  different  processing  dependencies  from  one wafer  run  to  another  can  occur.  These  de-
+fects  include  interface  states, generation-recombination  centers  in  the  Si  substrate,  neutral  electron  traps  in  the  oxide  bulk  distributed  away  from  the  cathode/oxide  interface,  and positively  charged  oxide  sites  (mostly  <<slow  states>> )  near the  anode/oxide  interface.\cite{SiO2:DiMaria}
+
+На границі з (111) --- Pb центр,
+на границі з (100) --- Pb1 та Pb0.
+центри хімічно ідентичні, різна електрична активність (Pb1, здається не активний)
+взагалі робота --- огляд.. там багато всякого про інтерфейсні рівні \cite{SiO2:Rev}
+
+Опромінення гамма--квантами, доза 1е6,
+утворилися нові інтерфейсні рівні (порядку 3е10 см-2).. головна ідея -- при прикладенні напруги в опромінених структурах генеруються більше пасток \cite{AASSIME1997}
+
+тонкі (20--40 ангстрем) шари , опромінення х-променями (10 кев), утворюються такі самі дефекти (Е' (позитивно заряджені вакансії кисню) та два типи Pb, бо (100) пластинки)
+that one key parameter for the moddication of the electrically  active  defects  in  MOS  structures  is their hydrogen content \cite{SiO2:Cantin}
+
+опромінення протонами (еквівалентна доза гамма--квантів близько 1е6) --- зміни струмів різних (там транзистор) можуть бути і від'ємні після опроміненя
+is  shown  to be  a result  of  the increase  in  fixed oxide  charge  and  surface  trap  densities,  in combination with the different SRH  recombination rate limiting
+mechanisms in the presence of high density surface traps \cite{SiO2:Niu}
+
+огляд радіаційних дефектів в SiO2:
+пастки, які захоплюють позитивний заряд--- відпалюються при температурах 200--400 градусів цельсію
+Е' центр (вакансія кисню) --- основний,
+$E'_\delta$ (комплекс вакансія кисню--кремній), тяжко утворюється при дії фотонів (гамма та Х)
+три пастки пов'язані з напруженими зв'язками
+негативний заряд
+Pb центри (причому звільнені атоми водню можуть взаємодіяти і іншими, ще зв'язаними, і відривати їх також)
+як не дивно, знову вакансії кисню
+we generally expect the neutral oxygen-vacancy to be a hole trap, it may also trap electrons leading  to a negatively charged state in the SiO2  bandgap
+about 1  eV below the conduction band edge \cite{SiO2:Devine}
+
+decrease of base current during annealing. We  found that two mechanisms
+are responsible for annealing: the recombination  of charges and
+the bonding of hydrogen atoms on interface traps.
+процеси з двома енергіями активації -- 0,23 ев та 0,046ев
+As  the  Shockley-Read-Hall  current  is  proportional to the
+density of  interface traps,  the decrease of  the base current
+is proportional to  the  density of  the  annealed interface traps. \cite{SiO2:Wurzer}
+
+Ще одна робота про результат опромінення: переважно Е', Pb (або два варіанти для 100) все повторюється..
+і те, що Pb амфотерний (може захоплювати і дірки, якщо його рівень в нижній половині забороненої зони)\cite{SiO2:Lenahan}
+
+It is well established nowadays that one of the main hole trapping centres responsible for irradiation-induced positive
+charge is the E'-centre. Electron spin resonance (ESR)
+studies have revealed that the E'-centre is a defect resulting
+from an oxygen vacancy in SiO2. Adirect correlation has been
+established between the annealing of the oxide-trapped charge.
+The key SiO2/Si interface defect is called Pb-centre and
+corresponds to a silicon dangling bond at the interface, back-
+bonded by three other silicon atoms . Passivation of these dangling bonds (DBs) occurs
+through binding with hydrogen.
+From this result it is concluded that the degradation
+and recovery of the device performance are mainly caused by
+trapped-oxide charge
+Вираз для струму, пов'язаного з поверхневою рекомбінацією, близький до того, що використовували ми
+\cite{SiO2:Takakura}
+
+залежність дифузійної здатності від механічних напруг \cite{AZIZ2001}
+
+\cite{Ostap:SiO2} стан границі Si--SiO2, підсилення дифузії водню
+\cite{Ostap:PhotoLum,ostapenko1997} підсилення дифузії водню
 
 
 \section*{Висновки до розділу \ref{Ch_UST_MW}}
@@ -1173,8 +1357,8 @@ s~Nss
 %\nocite{*}
 
 
-%\include{Dissertation/StatsAndAbst} 
-%\include{Dissertation/stats} 
+%\include{Dissertation/StatsAndAbst}
+%\include{Dissertation/stats}
 
 
 
