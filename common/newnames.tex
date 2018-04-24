@@ -36,7 +36,7 @@
 \newcommand{\structureTXT}{\textbf{Cтруктура та обсяг дисертації.}}
 
 
-\newcommand{\authorbibtitle}{Список публікацій здобувача за темою дисертації}
+\newcommand{\authorbibtitle}{\textbf{\MakeUppercase{СПИСОК ОПУБЛІКОВАНИХ ПРАЦЬ ЗА ТЕМОЮ ДИСЕРТАЦІЇ}}}
 %\newcommand{\vakbibtitle}{В изданиях из списка ВАК РФ}
 %\newcommand{\notvakbibtitle}{В прочих изданиях}
 %\newcommand{\confbibtitle}{В сборниках трудов конференций}
@@ -79,12 +79,17 @@
 
 \newcommand{\thesisAuthorFIOen}        % Диссертация, ФИО автора инициалами
 {\todo{Olikh~O.\,Ya.}}
-
+\newcommand{\thesisAuthorFIOru}        % Диссертация, ФИО автора инициалами
+{\todo{Олих~O.\,Я.}}
 
 \newcommand{\thesisUdk}                % Диссертация, УДК
 {\todo{534.29, 537.312.5/.6/.9}}
 \newcommand{\thesisTitle}              % Диссертация, название
 {\todo{Акусто-- та радіаційноіндуковані явища в поверхнево--бар'єрних кремнієвих та арсенід галієвих структурах}}
+\newcommand{\thesisTitleRu}              % Диссертация, название
+{\todo{Акусто-- и радиационноиндуцированные явления в поверхностно--баръерных кремниевых и арсенид галиевых структурах}}
+\newcommand{\thesisTitleEn}              % Диссертация, название
+{\todo{Acoustically and radiation induced phenomena in surface barrier silicon and gallium arsenide structures}}
 %\newcommand{\thesisSpecialtyNumber}    % Диссертация, специальность, номер
 %{\todo{104}}
 %\newcommand{\thesisSpecialtyTitle}     % Диссертация, специальность, название
@@ -92,7 +97,7 @@
 \newcommand{\thesisSpecialtyNumber}    % Диссертация, специальность, номер
 {\todo{01.04.07}}
 \newcommand{\thesisSpecialtyTitle}     % Диссертация, специальность, название
-{\todo{Фізика твердого тіла}}
+{\todo{фізика твердого тіла}}
 \newcommand{\thesisKnowledgeTitle}     % Диссертация, галузь знань
 {\todo{Природничі науки}}
 \newcommand{\thesisKnowledgeNumber}     % Диссертация, шифр галузі знань
@@ -112,6 +117,20 @@
 {\todo{Київський національний університет імені Тараса Шевченка}}
 %\newcommand{\thesisOrganizationShort}  % Диссертация, краткое название организации для доклада
 %{\todo{НазУчДисРаб}}
+
+\newcommand{\abstractBegin}
+{\todo{Дисертація на здобуття наукового ступеня \thesisDegree~
+за спеціальністю \thesisSpecialtyNumber -- \thesisSpecialtyTitle. -- \thesisOrganization, \thesisCity, \thesisYear.}}
+
+\newcommand{\abstractBeginRu}
+{\todo{Диссертация на соискание научной степени доктора физико--математических наук  по специальности 01.04.07  --  физика твердого тела.  -- 
+Киевский национальный университет имени Тараса Шевченко МОН Украины, 
+Киев, \thesisYear.}}
+
+
+\newcommand{\abstractBeginEn}
+{\todo{Thesis for the Doctor’s of Science Degree (Physics and Mathematics) by specialty 01.04.07 -- 
+Solid--state Physics. - Kyiv National Taras Shevchenko University, Ministry  of Education and Science of Ukraine, Kyiv, \thesisYear.}}
 
 \newcommand{\thesisOrganizationEn}       % Диссертация, организация
 {\todo{Taras Shevchenko National University of Kyiv}}
@@ -175,7 +194,7 @@
 \newcommand{\defenseCouncilTitle}      % Защита, учреждение диссертационного совета
 {\todo{Название учреждения}}
 \newcommand{\defenseCouncilAddress}    % Защита, адрес учреждение диссертационного совета
-{\todo{03022, Київ, просп. академіка Глушкова~4,  корп.~1, фізичний 
+{\todo{03022, Київ, просп. академіка Глушкова~4,  корп.~1, фізичний
 факультет, ауд. 500}}
 \newcommand{\defenseCouncilPhone}      % Телефон для справок
 {\todo{+7~(0000)~00-00-00}}
@@ -212,10 +231,14 @@ U--Ts2, U--Ts3, U--Tb2, U--Ts1 та U--Tb1, відповідно.
 
 % To avoid conflict with beamer class use \providecommand
 \providecommand{\keywords}%            % Ключевые слова для метаданных PDF диссертации и автореферата
-{ультразвук, гамма-опромінення, кремній, бар'єрні структури, акусто--дефектна взаємодія, перенесення заряду, оборотні акусто--індуковані зміни}
+{\textbf{Ключові слова:} ультразвук, гамма--опромінення, кремній, бар'єрні структури, акусто--дефектна взаємодія, перенесення заряду, оборотні акустоіндуковані зміни.}
+
+
+\providecommand{\keywordsRu}%            % Ключевые слова для метаданных PDF диссертации и автореферата
+{\textbf{Ключевые слова:} ультразвук, гамма--облучение, кремний, баръерные структуры, акусто--дефектное взаимодействие, перенесение заряда, обратимые акустоиндуцированные изменения.}
 
 \providecommand{\keywordsEn}%            % Ключевые слова для метаданных PDF диссертации и автореферата
-{ultrasound, gamma-rays, silicon, barrier structures, acousto-defect interaction, charge transport, reversible acoustically--induced change}
+{\textbf{Key words:} ultrasound, gamma--rays, silicon, barrier structures, acousto--defect interaction, charge transport, reversible acoustically induced change}
 
 \renewcommand{\chaptername}{Розділ}
 \renewcommand{\appendixname}{Додаток} % (ГОСТ Р 7.0.11-2011, 5.7)

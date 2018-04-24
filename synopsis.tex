@@ -17,6 +17,7 @@
 \input{Synopsis/synstyles}    % Стили для автореферата
 \input{Synopsis/userstyles}   % Стили для специфических пользовательских задач
 %\input{biblio/bibliopreamble} % Настройки библиографии из внешнего файла (там же выбор: встроенная или на основе biblatex)
+\input{biblio/predefined}
 
 \begin{document}
 
@@ -24,6 +25,8 @@
 \mainmatter                   % В том числе начинает нумерацию страниц арабскими цифрами с единицы
 %\mainmatter*                  % Нумерация страниц не изменится, но начнётся с новой страницы
 \input{Synopsis/content}      % Содержание автореферата
+
+\include{Dissertation/references} 
 
 %%%% Выходные сведения типографии
 %\newpage\thispagestyle{empty}
