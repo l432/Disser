@@ -19,6 +19,8 @@
     \newcommand{\tabcapalign}{\raggedright}  % по левому краю страницы или аналога parbox
     \renewcommand{\tablabelsep}{~\cyrdash\ } % тире как разделитель идентификатора с номером от наименования
     \newcommand{\tabtitalign}{}
+%\newcommand{\tabcapalign}{\raggedleft}
+%\newcommand{\tabtitalign}{\par\centering}
 }{%
     \ifnumequal{\value{tablaba}}{0}{%
         \newcommand{\tabcapalign}{\raggedright}  % по левому краю страницы или аналога parbox
@@ -46,7 +48,9 @@
 }
 
 \precaption{\tabcapalign} % всегда идет перед подписью или \legend
+%\fleg@table{\tablename}
 \captionnamefont{\normalfont\normalsize} % Шрифт надписи «Таблица #»; также определяет шрифт у \legend
+%\renewcommand{\tablename}{Таблиця}
 \captiondelim{\tablabelsep} % разделитель идентификатора с номером от наименования
 \captionstyle[\tabtitalign]{\tabtitalign}
 \captiontitlefont{\normalfont\normalsize} % Шрифт с текстом подписи
@@ -54,14 +58,17 @@
 %%% Рисунки %%%
 \setfloatadjustment{figure}{%
     \setlength{\abovecaptionskip}{0pt}   % Отбивка над подписью
-    \setlength{\belowcaptionskip}{0pt}   % Отбивка под подписью
+    \setlength{\belowcaptionskip}{0pt}   % Отбивка под подписью 
     \precaption{} % всегда идет перед подписью или \legend
+%    \precaption{\raggedright} % всегда идет перед подписью или \legend
     \captionnamefont{\normalfont\normalsize} % Шрифт надписи «Рисунок #»; также определяет шрифт у \legend
     \captiondelim{\figlabelsep} % разделитель идентификатора с номером от наименования
 %    \captionstyle[\centering]{\centering} % Центрирование подписей, заданных командой \caption и \legend
+    \captionstyle[\justifying]{\justifying} % Центрирование подписей, заданных командой \caption и \legend
     \captiontitlefont{\normalfont\normalsize} % Шрифт с текстом подписи
     \postcaption{} % всегда идет после подписи или \legend, и с новой строки
 }
+
 
 %%% Подписи подрисунков %%%
 \newsubfloat{figure} % Включает возможность использовать подрисунки у окружений figure
