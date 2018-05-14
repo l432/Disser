@@ -31,7 +31,10 @@
 
 %%% Блок управления параметрами для выравнивания заголовков в тексте %%%
 \newlength{\otstuplen}
-\setlength{\otstuplen}{\theotstup\parindent}
+%\setlength{\otstuplen}{\theotstup\parindent}
+\setlength{\otstuplen}{2.5em}
+\newlength{\otstuplensec}
+\setlength{\otstuplensec}{2.5em}
 \ifnumequal{\value{headingalign}}{0}{% выравнивание заголовков в тексте
     \newcommand{\hdngalign}{\centering}                % по центру
     \newcommand{\hdngaligni}{}% по центру
@@ -48,7 +51,7 @@
 \setrmarg{2.55em plus1fil}                             %To have the (sectional) titles in the ToC, etc., typeset ragged right with no hyphenation
 \renewcommand{\cftchapterpagefont}{\normalfont}        % нежирные номера страниц у глав в оглавлении
 \renewcommand{\cftchapterleader}{\cftdotfill{\cftchapterdotsep}}% нежирные точки до номеров страниц у глав в оглавлении
-%\renewcommand{\cftchapterfont}{}                       % нежирные названия глав в оглавлении
+\renewcommand{\cftchapterfont}{}                       % нежирные названия глав в оглавлении
 
 \ifnumgreater{\value{headingdelim}}{0}{%
     \renewcommand\cftchapteraftersnum{.\space}       % добавляет точку с пробелом после номера раздела в оглавлении
@@ -57,13 +60,13 @@
     \renewcommand\cftsectionaftersnum{.\space}       % добавляет точку с пробелом после номера подраздела в оглавлении
     \renewcommand\cftsubsectionaftersnum{.\space}    % добавляет точку с пробелом после номера подподраздела в оглавлении
     \renewcommand\cftsubsubsectionaftersnum{.\space} % добавляет точку с пробелом после номера подподподраздела в оглавлении
-%    \AtBeginDocument{% без этого polyglossia сама всё переопределяет
-%        \setsecnumformat{\csname the#1\endcsname.\space}
-%    }
+    \AtBeginDocument{% без этого polyglossia сама всё переопределяет
+        \setsecnumformat{\csname the#1\endcsname.\space}
+    }
 }{%
-%    \AtBeginDocument{% без этого polyglossia сама всё переопределяет
-%        \setsecnumformat{\csname the#1\endcsname\quad}
-%    }
+    \AtBeginDocument{% без этого polyglossia сама всё переопределяет
+        \setsecnumformat{\csname the#1\endcsname\quad}
+    }
 }
 
 \renewcommand*{\cftappendixname}{\appendixname\space} % Слово Приложение в оглавлении
@@ -96,6 +99,7 @@
 %% Работа должна быть выполнена ... размером шрифта 12-14 пунктов (ГОСТ Р 7.0.11-2011, 5.3.8). То есть не должно быть надписей шрифтом более 14. Так и поставим.
 %% Эти установки будут давать одинаковый результат независимо от выбора базовым шрифтом 12 пт или 14 пт
 \newcommand{\basegostsectionfont}{\fontsize{14pt}{16pt}\selectfont\bfseries}
+%\newcommand{\basegostsectionfont}{\fontsize{14pt}{16pt}\selectfont}
 
 \makechapterstyle{thesisgost}{%
     \chapterstyle{default}
@@ -107,7 +111,8 @@
     \renewcommand*{\chaptitlefont}{\basegostsectionfont}
     \renewcommand*{\chapterheadstart}{}
     \ifnumgreater{\value{headingdelim}}{0}{%
-        \renewcommand*{\afterchapternum}{.\space}   % добавляет точку с пробелом после номера раздела
+%        \renewcommand*{\afterchapternum}{.\space}   % добавляет точку с пробелом после номера раздела
+        \renewcommand*{\afterchapternum}{\\}   % добавляет точку с пробелом после номера раздела
     }{%
         \renewcommand*{\afterchapternum}{\quad}     % добавляет \quad после номера раздела
     }
@@ -126,11 +131,16 @@
 
 \chapterstyle{thesisgost}
 
-\setsecheadstyle{\basegostsectionfont\hdngalign}
-\setsecindent{\otstuplen}
+%\setsecheadstyle{\basegostsectionfont\hdngalign}
+%\setsecindent{\otstuplen}
+\setsecheadstyle{\basegostsectionfont}
+\setsecindent{\otstuplensec}
 
-\setsubsecheadstyle{\basegostsectionfont\hdngalign}
-\setsubsecindent{\otstuplen}
+%\setsubsecheadstyle{\basegostsectionfont\hdngalign}
+%\setsubsecindent{\otstuplen}
+\setsubsecheadstyle{\basegostsectionfont}
+\setsubsecindent{\otstuplensec}
+
 
 \setsubsubsecheadstyle{\basegostsectionfont\hdngalign}
 \setsubsubsecindent{\otstuplen}
@@ -139,14 +149,15 @@
 
 \ifnumequal{\value{chapstyle}}{1}{%
     \chapterstyle{thesisgostchapname}
-    \renewcommand*{\cftchaptername}{\chaptername\space} % будет вписано слово Глава перед каждым номером раздела в оглавлении
+%    \renewcommand*{\cftchaptername}{\chaptername\space} % будет вписано слово Глава перед каждым номером раздела в оглавлении
+    \renewcommand*{\cftchaptername}{{РОЗДІЛ}\space} % будет вписано слово Глава перед каждым номером раздела в оглавлении
 }{}%
 
 %%% Интервалы между заголовками
 \setbeforesecskip{\theintvl\curtextsize}% Заголовки отделяют от текста сверху и снизу тремя интервалами (ГОСТ Р 7.0.11-2011, 5.3.5).
 \setaftersecskip{\theintvl\curtextsize}
 \setbeforesubsecskip{\theintvl\curtextsize}
-\setaftersubsecskip{\theintvl\curtextsize}
+%\setaftersubsecskip{\theintvl\curtextsize}
 \setbeforesubsubsecskip{\theintvl\curtextsize}
 \setaftersubsubsecskip{\theintvl\curtextsize}
 
@@ -199,6 +210,10 @@
     \regtotcounter{totalcount@figure}
     \regtotcounter{totalcount@table}       % Если иным способом поставить в преамбуле то ошибка в числе таблиц
     \regtotcounter{TotPages}               % Если иным способом поставить в преамбуле то ошибка в числе страниц
+     \abovedisplayskip=17pt plus 3pt minus 0pt
+ \abovedisplayshortskip=10pt plus 0pt
+ \belowdisplayskip=17pt plus 3pt minus 0pt
+ \belowdisplayshortskip=10pt plus 3pt minus 0pt
 }
 
 %%% Правильная нумерация приложений %%%
