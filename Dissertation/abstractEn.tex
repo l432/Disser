@@ -3,12 +3,12 @@ ABSTRACT
 					
 \vspace{0.7cm}
 \noindent
-\thesisAuthorFIOen~\thesisTitleEn. --  Qualification scientific work. 
+\thesisAuthorFIOen~\thesisTitleEn. --  Qualification scientific work.
 
 \vspace{0.7cm}
 \noindent
 %\abstractBegin
-Doctor of Science Thesis. Speciality 01.04.07 <<Solid State Physics>> (10 --- Nature science).  --- Taras 
+Doctor of Science Thesis. Speciality 01.04.07 <<Solid State Physics>> (10 --- Nature science).  --- Taras
 Shevchenko National University of Kyiv, Kyiv, \thesisYear.
 
 
@@ -20,13 +20,13 @@ The thesis is devoted to study of physical patterns and to establish of mechanis
 The paper presents the results of experimental studies of the first discovered reversible acoustically induced effects in irradiated and non--irradiated silicon structures with a $p$--$n$ transition (solar cells).
 In particular, it was found that ultrasound loading (USL, frequency $f_\mathtt{US}=4\div8$~MHz, intensity $W_\mathtt{US}\leq0,4$~W/cm$^2$, temperature $290\div340$~К ) leads to decrease in the short--circuit current density (down to 10 \%), open--circuit voltage (down to 15\%) and fill factor of voltage--current characteristic (VCC) (down to 5\%) in non-irradiated silicon solar cell.
 The changes are reversible, the parameters return to their original values after the USL stopping and sample store at room temperature for several tens of minutes.
-The values of acoustically induced changes are slightly dependent on temperature; 
+The values of acoustically induced changes are slightly dependent on temperature;
 at the same time, the transverse waves using leads to more significant parameters reduction as compared to the case of longitudinal waves with the same intensity.
 The USL affect on a generation time $\tau_{g}$,
 an ideality factor $n_\mathrm{id}$,
 an recombination time $\tau_n$
 and shunt resistance $R_{sh}$ was carried out for the purpose of determination of physical mechanism of the detected effects.
-It is established that the USL causes the reversible both growth of $n_\mathrm{id}$  (up to 0,04) and 
+It is established that the USL causes the reversible both growth of $n_\mathrm{id}$  (up to 0,04) and
 decrease of $\tau_g$ (down to 70\% of initial value) and $\tau_n$ (down to 10\%).
 It is shown by using intensive ($2$~kW/m$^2$) long--term (up to $15$~hour) illumination,
 annealing (200~$^\circ$C) and
@@ -61,18 +61,22 @@ for divacancy $K_\mathtt{US}=(42\pm15)$~cm$^2$~W$^{-1}$,
 for oxygen precipitates $K_\mathtt{US}>5$~cm$^2$~W$^{-1}$.
 
 
-Проведено порівняльний аналіз та оптимізації методів розрахунку параметрів (струму насичення  $I_s$, висоти бар'єру Шотткі  $\Phi_b$), фактора неідеальності та послідовного опору) структур метал--напівпровідник з вольт--амперних характеристик.
-Були розглянуті 10 аналітичних методів (використовують інтегрування ВАХ (метод Kaminski І), побудову різноманітних допоміжних функцій (чи їх масиву) та лінійну (методи Chung, Lee та Kaminski ІІ) чи нелінійну (Gromov) апроксимацію або пошук екстремумів (Cibils);
-також для побудови функцій застосовують додаткові параметри (методи Norde та Bohlin) або диференційні коефіцієнти першого (Werner) або вищого порядків (Mikhelashvili))
-2 чисельних методи (метод найменших квадратів зі статичними ваговими коефіцієнтами застосовувався безпосередньо до рівняння ВАХ та до його розв'язку, вираженого через $W$--функцію Ламберта) та
-4 еволюційних алгоритми (диференційної еволюції (DE),
-оптимізації зграї частинок (PSO),
-модифікованої штучної бджолиної сім'ї (MABC) та
-оптимізованого викладання та навчання (TLBO)).
-Для методів Norde та Bohlin визначені  оптимальні (для кремнієвих діодів Шотткі при вимірюваннях в діапазоні температур $130\div330$~К) величини додаткових параметрів (1,8 для Norde та 1,6 і 3,5 для Bohlin).
-Запропоновано модифікацію методу Mikhelashvili, яка дозволяє застосовувати його в автоматичному режимі до множини ВАХ;
-вона полягає у послідовному використанні медіанного фільтру та процедури згладжування функції $\alpha(V)=d(\ln I)/d(\ln V)$ перед визначенням положення її максимуму;
-показано доцільність застосування запропонованої процедури при опрацюванні реальних ВАХ для підвищення точності методу.
+The comparative analysis and optimization of the methods for metal--semiconductor structure parameters (saturation current $I_s$, Schottky barrier height $\Phi_b$, ideality factor and series resistance) calculating from VCC are done.
+Ten analytical method was under consideration.
+They based on VCC integration (Kaminski І method),
+single (or set of) auxiliary function and linear (Chung, Lee and Kaminski ІІ methods) or non--linear (Gromov) approximation or extreme search  (Cibils);
+ auxiliary function with (Norde and Bohlin methods) or differential coefficient of the first (Werner) or higher order (Mikhelashvili).
+Besides, two numerical methods were used:
+the standard method of least squares with statistical weights was applied to both VCC equation and solution, expressed by Lambert $W$--function.
+At last, four evolutionary algorithms were under consideration: the penalty based differential evolution (DE), the particle swarm optimization (PSO), the modified artificial bee colony (MABC), and the teaching learning
+based optimization (TLBO).
+The optimal value (Schottky silicon diodes, temperature range $130\div330$~K) of adding parameters were determined
+for Norde and Bohlin methods (1,8 and (1,6 and 3,5), respectively).
+The Mikhelashvili method modification, which  allows to be used in automatic mode for a set of VCCs, is proposed;
+this modification is consecutive using of the median filter and the smoothing procedure for 
+function $\alpha(V)=d(\ln I)/d(\ln V)$ before maximum position determination;
+it is shown the expediency of proposed procedure using for real VCCs to improve the method accuracy.
+
 Запропоновано адаптивну процедуру вибору діапазону ВАХ, який використовується для побудови допоміжних функцій при застосуванні аналітичних методів визначення параметрів та показано, що вона дозволяє підвищити точність визначення параметрів (приблизно на порядок при кімнатних температурах у випадку низького рівня похибок вимірювання) і не викликає критичного збільшення часу розрахунку.
 Проведено порівняльний аналіз точності  та швидкодії  визначення параметрів різними методами.
 Показано, що найбільша точність досягається при використанні еволюцiйних алгоритмів, чисельних методів, методу Gromov з адаптивною процедурою та методу Lee.
