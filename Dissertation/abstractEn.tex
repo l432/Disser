@@ -73,45 +73,46 @@ based optimization (TLBO).
 The optimal value (Schottky silicon diodes, temperature range $130\div330$~K) of adding parameters were determined
 for Norde and Bohlin methods (1,8 and (1,6 and 3,5), respectively).
 The Mikhelashvili method modification, which  allows to be used in automatic mode for a set of VCCs, is proposed;
-this modification is consecutive using of the median filter and the smoothing procedure for 
+this modification is consecutive using of the median filter and the smoothing procedure for
 function $\alpha(V)=d(\ln I)/d(\ln V)$ before maximum position determination;
 it is shown the expediency of proposed procedure using for real VCCs to improve the method accuracy.
+An adaptive procedure of choosing of VCC range, which is used to auxiliary functions construct in the parameter determination analytical methods, is proposed;
+it is shown that it allows to increase the accuracy of the parameters determination (approximately at an order of magnitude at room temperatures in the case of a low level of measurement errors) and does not cause a critical increase in the calculation time.
+A comparative analysis of the accuracy and speed of parameters determination by different methods is carried out.
+It is shown that the high accuracy is achieved by using the evolutionary algorithms, the numerical methods, the Gromov method with adaptive procedure and the Lee method.
+It is shown that the Lambert's function using in numerical methods reduces the errors of parameters determination.
+The influence of the each  parameter absolute values on the extraction accuracy of $R_s$, $\Phi_b$ and $n_\mathrm{id}$ is determined.
+In particular, it was shown that evolutionary algorithms allow to obtain the most correct results for small (several Ohm) $R_s$ values and for temperatures, while the numerical methods accuracy is the most stable ones.
 
-Запропоновано адаптивну процедуру вибору діапазону ВАХ, який використовується для побудови допоміжних функцій при застосуванні аналітичних методів визначення параметрів та показано, що вона дозволяє підвищити точність визначення параметрів (приблизно на порядок при кімнатних температурах у випадку низького рівня похибок вимірювання) і не викликає критичного збільшення часу розрахунку.
-Проведено порівняльний аналіз точності  та швидкодії  визначення параметрів різними методами.
-Показано, що найбільша точність досягається при використанні еволюцiйних алгоритмів, чисельних методів, методу Gromov з адаптивною процедурою та методу Lee.
-Показано, що використання функції Ламберта при застосуванні чисельних методів дозволяє зменшити помилки визначення параметрів.
-Визначено вплив абсолютних величин кожного з параметрів на точність визначення $R_s$, $\Phi_b$ та $n_\mathrm{id}$.
-Зокрема показано, що еволюційні алгоритми дозволяють отримати найбільш коректні результати при малих (декілька Ом) значеннях $R_s$ або високих температурах, а найбільш стійкими до величин параметрів є точності чисельних методів.
-
-У  роботі представлені результати досліджень
-впливу $\gamma$--квантами $^{60}$Co на структури Al$-n-n^+$--Si---Al з контактом Шотткі та
-вперше виявлених динамічних акустоіндукованих ефектів в цих структурах при кімнатних температурах.
-Виявлено, що при
-опроміненні  з дозами $10^6$~рад та $10^7$~рад відбувається
-немонотонні зміни висоти бар'єра Шотткі та вперше показано взаємозв'язок характеру немонотонності та ступеня неоднорідності контакту.
-Встановлено, що зміна електрофізичних параметрів структур при дозі опромінення $10^6$~рад
-пов'язана з накопичення на інтерфейсній границі радіаційних дефектів акцепторного типу та радіаційно--підсиленим дислокаційним ковзанням, що викликає перегрупування патчів.
-Вперше виявлено оборотні зменшення висоти бар'єру та збільшення зворотного струму  структур Al$-n-n^+$--Si---Al під дією УЗН при $T=305$~К.
-Показано, що в неопромінених структурах акустоіндуковане зменшення висоти бар'єру пов'язане зі зміною рівня нейтральності інтерфейсних станів
-внаслідок іонізації дефектів на границі розділу, викликане коливаннями дислокаційних відрізків у акустичному полі.
-Опромінення викликає
-а)~закріплення сегментів лінійних дефектів внаслідок гетерування точкових дефектів;
-б)~появу акустоактивних точкових радіаційних дефектів (А--центри, дивакансії)
-що спричинює зміну механізму акусто--дефектної взаємодії.
-Показано, що акустоіндуковані зміни зворотного струму пов'язані з впливом пружних хвиль лише на ТЕ складову,
-тоді як незмінність при УЗН тунельних струму свідчить, що відповідні дефекти (зокрема, міжвузольні атоми вуглецю) не є акустоактивними.
+The paper presents the research results, which concern both influence of $\gamma$--rays $^{60}$Co on Al--$n$--$n^+$--Si---Al structure with Schottky contact and
+the firstly detected dynamic acoustically induced effects in such structures at room temperatures.
+It is found that irradiation with doses of $10^6$~rad and $10^7$~rad leads to
+non--monotonic changes in the Schottky barrier height;
+for the first time it was shown the relationship between the non--monotony type and the contact inhomogeneity degree.
+It is established that the change in the structure electrophysical parameters  at a radiation dose of $10^6$~rad
+ is associated with the accumulation of acceptor--type radiation defects at the interface and 
+ radiation--enhanced dislocation glide, which causes the patching regroup.
+For the first time, a reversible decrease in the barrier height and an increase in the reverse current of the structures Al--$n$--$n^+$--Si---Al under USL action were revealed at $T=305$~K .
+It is shown that, the acoustically induced barrier height reduction in the non--irradiated structures is associated with the change in the interface states neutrality level, which is connected to ionization of inner boundary defects, caused by fluctuations of the dislocation segments in the acoustic field.
+Irradiation leads to
+i)~pinning of linear defect segments as a result of a point defects gettering;
+ii)~appearance of acoustically--active point radiation defects (A-centers, divacances)
+which causes a change in the acousto--defect interaction mechanism.
+It is shown that acoustically induced changes in reverse current are related to the elastic waves influence on the thermionic emission component only,
+whereas the invariance of tunneling current under USL action indicates the  non--acoustically activity of respective
+defects (in particular, the interstitial carbon atoms). 
 
 
-Досліджено оборотні акустоіндуковані ($f_\mathtt{US}=4,1$, 8,4 та 27,8~МГц) зміни параметрів діодів Шотткі Mo$/n-n^+$--Si в інтервалі температур $130\div330$~К.
-Використовуючи для пояснення отриманих експериментальних даних модель неоднорідного контакту з подвійним розподілом Гауса
-показано, що ультразвук викликає оборотні збільшення фактора неідеальності та зміни $\Phi_{b}$,
-величина і знак яких залежить від температури,
-та зростання ефективної густини патчів.
-Встановлено, що температурні та частотні залежності акустоіндукованих змін в структурах
- Mo$/n-n^+$--Si  можуть бути пояснені в рамках моделі Брейсфолда,
-яка передбачає дифузію дислокаційних перегинів в ультразвуковому полі.
-Виявлено акустоіндуковане зростання зворотного струму та показано, що причиною цього ефекту є викликане ультразвуком підсилення емісії електронів з пасток на границі розділу (для термоемісійної складової струму) та зміна розміру дефектних кластерів (для компоненти, пов'язаної з тунелюванням, стимульованим фононами).
+The reversible acoustically ($f_\mathtt{US}=4,1$, 8,4 and 27,8~MHz)
+induced variations in the Mo$/n-n^+$--Si Schottky diodes parameters are investigated in the temperature range $130\div330$~К.
+It is shown by using a model of inhomogeneous contact with a double Gaussian distribution for the obtained experimental data explanation that ultrasound causes a reversible both increase in the ideality factor,  effective density of patches and the $\Phi_{b}$ change,
+the magnitude and sign of which depends on the temperature.
+It is established that the temperature and frequency dependences of acoustically induced changes can be explained in the framework of the Brailsford’s model,
+which involves diffusion of dislocation kinks in the ultrasound field.
+Acoustically induced reverse current increase is found;
+it is shown that the effect is deals with the enhancement of emission of electrons from traps at the interface by ultrasound in case of thermionic current component
+and with the change of defect clusters size in the case of phonon--assisted tunneling current component.
+
 
  Досліджено вплив надвисокочастотного випромінювання (частота 2,45 ГГц, питома потужність  $1,5$~Вт/см$^2$, час обробки --- до 80~c) на параметри глибоких центрів, розташованих у приповерхневій області монокристалів $n$--6$H$--SiC та $n$--GaAs, а також арсенід галієвих епітаксійних структур за допомогою методу акустоелектричної релаксаційної спектроскопії.
 Виявлено, що внаслідок мікрохвильового опромінення біля поверхні збільшується концентрація міжвузольних атомів та відбуваються перетворення в дефектній підсистемі внаслідок їх взаємодії з вихідними дефектами вакансійного типу.
