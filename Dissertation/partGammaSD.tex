@@ -557,7 +557,7 @@ $\Phi_b=f(n_\mathrm{id})$ в низькотемпературному діапа
 }%
 \end{figure}
 
-У випадку неоднорідного бар'єру Шотткі стала Річардсона може бути визначена за
+У випадку неоднорідного бар'єру Шотткі $A^*$ може бути визначена за
 допомогою модифікованої залежності Річардсона \cite{Tascioglu2010old,Yildirim2010}:
 \begin{equation} \label{eqRich:Mod}
 \ln\left(\frac{I_s}{T^2}\right)-\left(\frac{q^2\sigma_{\Phi0}^2}{2k^2T^2}\right)=\ln(AA^*)-\frac{q\Phi_b^0}{kT}.
@@ -583,13 +583,13 @@ $\sigma_{\Phi,0}$, В: 0,099 (крива 1) та 0,04 (2).
 У табл.~\ref{tabPar:SSDA} також наведено значення висоти бар'єру, визначене з ВФХ.
 У цьому випадку  \cite{Rhoderick1988,Schroder2006}:
 \begin{equation}\label{eqFbCV}
-\Phi_{b,CV}=V_n+V_0+\frac{kT}{q},
+\Phi_{b,CV}=V_n+V_0+kT/q,
 \end{equation}
 де
 $V_0$ --- абсциса точки перетину з віссю напруг прямої, яка апроксимує залежність $1/C^2=f(V)$ (рис.~\ref{figCV}).
 Зазначимо, що визначена таким способом ВБШ має перевищувати величину, отриману за допомогою ВАХ
 \cite{Rhoderick1988,GELCZUK2014,Mohan,Cetin2005,Soylu,Yildirim2010,Karatas:2006NIMA}.
-Це пов'язано з тим, що $\Phi_{b,CV}$ визначається, насамперед, вигином зон і на неї не впливають, наприклад,
+Це пов'язано з тим, що $\Phi_{b,CV}$ визначається, насамперед, вигином зон і на неї не впливають
 сили зображення чи квантово--механічне тунелювання носіїв \cite{Rhoderick1988,GELCZUK2014,Mohan}.
 Більше того, неоднорідність контакту також не відображається на величині $\Phi_{b,CV}$ на відміну від ВБШ,
 яка визначається за допомогою ВАХ \cite{Sullivan,Tung:PhysRev,GELCZUK2014,Mohan}.
@@ -642,6 +642,24 @@ $f_p=(8\pm1)\cdot10^{-13}$.
 зору моделі неоднорідного контакту Шотткі.
 
 \subsection{Зворотне зміщення}
+\begin{figure}
+\center
+\includegraphics[width=0.65\textwidth]{figIV_SDAr}
+\caption{\label{figIV_SDAr}
+Зворотні ділянки ВАХ структур SSDA в температурному діапазоні 130$\div$330~K.
+Наведено криві, виміряні з кроком 20~К.
+}%
+\end{figure}
+
+\begin{figure}[b]
+\center
+\includegraphics[width=0.65\textwidth]{figIT_SDAr}
+\caption{\label{figIT_SDAr}
+Температурна залежність зворотного струму структур SSDA при різних зміщеннях.
+Точки --- експеримент, лінії --- апроксимація згідно з (\ref{eqIr})
+(суцільні при (130$\div$220)~К, пунктирні при (230$\div$330)~К).
+}%
+\end{figure}
 
 Приклади зворотних гілок ВАХ структур SSDA, виміряних при різних температурах, наведено на рис.~\ref{figIV_SDAr}.
 На представлених характеристиках не спостерігається насичення величини зворотного струму $I_R$.
@@ -662,25 +680,10 @@ $f_p=(8\pm1)\cdot10^{-13}$.
 
 
 
-\begin{figure}
-\center
-\includegraphics[width=0.65\textwidth]{figIV_SDAr}
-\caption{\label{figIV_SDAr}
-Зворотні ділянки ВАХ структур SSDA в температурному діапазоні 130$\div$330~K.
-Наведено криві, виміряні з кроком 20~К.
-}%
-\end{figure}
 
 
-\begin{figure}
-\center
-\includegraphics[width=0.65\textwidth]{figIT_SDAr}
-\caption{\label{figIT_SDAr}
-Температурна залежність зворотного струму структур SSDA при різних зміщеннях.
-Точки --- експеримент, лінії --- апроксимація згідно з (\ref{eqIr})
-(суцільні при (130$\div$220)~К, пунктирні при (230$\div$330)~К).
-}%
-\end{figure}
+
+
 
 Проведений аналіз показав, що польова та температурна залежність зворотного струму можуть бути описані
 за допомогою виразу
@@ -706,7 +709,7 @@ $f_p=(8\pm1)\cdot10^{-13}$.
 
 \begin{figure}
 \center
-\includegraphics[width=0.8\textwidth]{figeIr_SDA}
+\includegraphics[width=0.9\textwidth]{figeIr_SDA}
 \caption{\label{figeIr_SDA}
 Залежність відносного внеску у зворотний струм
 ТЕ (криві 1, 3 та 5) та температуро--незалежної (криві 2, 4 та 6)
@@ -729,9 +732,9 @@ $f_p=(8\pm1)\cdot10^{-13}$.
 
 
 
-\begin{figure}
+\begin{figure}[b]
 \center
-\includegraphics[width=0.6\textwidth]{figIrTE_SDA}
+\includegraphics[width=0.55\textwidth]{figIrTE_SDA}
 \caption{\label{figIrTE_SDA}
 Польові залежності характеристичної енергії ТЕ складової зворотного струму
 в діапазонах температур  (130$\div$220)~К (крива 1) та   (230$\div$330)~К (крива 2).
@@ -966,8 +969,8 @@ $f_p$, $10^{-13}$&$8\pm1$&$8\pm1$&--\\ \hline
 Температурні залежності висоти бар'єру, розрахованої в рамках моделі ТЕ
 для низькотемпературної компоненти струму зразків SSDA (квадрати),
 g6SSDA (трикутники) та g7SSDA (кола).
-Прямі  --- лінійна апроксимація (суцільна для SSDA, пунктирна для g6SSDA та
-штрихована для g7SSDA)
+Прямі  --- лінійна апроксимація %(суцільна для SSDA, пунктирна для g6SSDA та
+%штрихована для g7SSDA)
 }%
 \end{figure}
 
@@ -980,6 +983,27 @@ g6SSDA (трикутники) та g7SSDA (кола).
 механізму перенесення заряду в g7SSDA.
 Зауважимо, що отримане значення сталої Річардсона для g6SSDA співпадає з відомою з літератури величиною.
 
+\begin{figure}
+\center
+\includegraphics[width=0.7\textwidth]{figRichMrad_SDA}
+\caption{\label{figRichMrad_SDA}
+Модифіковані (криві 1 та 2, структури SSDA та g6SSDA, відповідно) та звичайні (3, g7SSDA) залежності Річардсона, розраховані для ВТКС при 230$\div$330~K~(1) та 260$\div$330~K~(2, 3).
+$\sigma_{\Phi,0}$, мВ: 99 (1) та 100 (2).
+Прямі  --- лінійна апроксимація (суцільна для SSDA, пунктирна для g6SSDA та
+штрихована для g7SSDA)
+}%
+\end{figure}
+
+\begin{figure}[b]
+\center
+\includegraphics[width=0.8\textwidth]{figFbnonMon_SDA}
+\caption{\label{figFbnonMon_SDA}
+Дозові залежності ВБШ, визначені в рамках моделі неоднорідного контакту та безпосередньо з ВФХ та ВАХ.
+$T=290$~К
+}%
+\end{figure}
+
+
 З іншого боку, варто взяти до уваги, що згідно з даними табл.~\ref{tabSDAParRad},
 $\Phi_b^0$ зростає після малих поглинутих доз $\gamma$--опромінення, тоді як подальше збільшення $D$ викликає зменшення
 цієї величини.
@@ -991,25 +1015,23 @@ $\Phi_b^0$ зростає після малих поглинутих доз $\ga
 для однорідного інтерфейсу має спостерігатися перший варіант,
 тоді як для структур з великим впливом патчів --- другий.
 
-\begin{figure}
-\center
-\includegraphics[width=0.7\textwidth]{figFbnonMon_SDA}
-\caption{\label{figFbnonMon_SDA}
-Дозові залежності ВБШ, визначені в рамках моделі неоднорідного контакту та безпосередньо з ВФХ та ВАХ.
-$T=290$~К
-}%
-\end{figure}
-
-\begin{figure}
-\center
-\includegraphics[width=0.7\textwidth]{figRichMrad_SDA}
-\caption{\label{figRichMrad_SDA}
-Модифіковані (криві 1 та 2, структури SSDA та g6SSDA, відповідно) та звичайні (3, g7SSDA) залежності Річардсона, розраховані для ВТКС при 230$\div$330~K~(1) та 260$\div$330~K~(2, 3).
-$\sigma_{\Phi,0}$, мВ: 99 (1) та 100 (2).
-Прямі  --- лінійна апроксимація (суцільна для SSDA, пунктирна для g6SSDA та
-штрихована для g7SSDA)
-}%
-\end{figure}
+\begin{table}[b]
+\caption{Параметри, визначені з ВАХ структур Al---$n$--$n^+$--Si в наближенні теорії DAT}
+\label{tabSDAParRad:DAT}
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+$D$, рад &10$^6$ \textsuperscript{ a)}&10$^7$ \textsuperscript{ a)}&10$^7$ \textsuperscript{ б)}\\ \hline
+Діапазон температур, K&120$\div$240&110$\div$130&110$\div$210\\
+$E_{00}$, мВ&$17,8\pm0,5$&$23,5\pm0,5$&$80\pm10$\\
+$\chi_\mathrm{calc}$, $10^{-3}$ K$^{-1}$&$39\pm3$&$26\pm2$&$8\pm1$\\
+$\chi_\mathrm{fit}$, $10^{-3}$ K$^{-1}$&$73\pm6$&$42\pm4$&$8\pm1$\\
+$I_{s0}$, $10^{-14}$A&$5\pm0,5$&$13\pm3$&$(17\pm2)\cdot10^{5}$\\
+\hline
+\multicolumn{4}{l}{\textsuperscript{ a)}\emph{для високотемпературної компоненти струму}}\\
+\multicolumn{4}{l}{\textsuperscript{ б)}\emph{для низькотемпературної компоненти струму}}\\
+\end{tabular}
+\end{table}
 
 Для визначення механізму перенесення заряду при низьких температурах
 в опромінених структурах розглянемо температурні залежні фактора неідеальності --- рис.~\ref{figNTrad_SDA}.
@@ -1029,7 +1051,7 @@ $\sigma_{\Phi,0}$, мВ: 99 (1) та 100 (2).
 
 \begin{figure}
 \center
-\includegraphics[width=0.75\textwidth]{figNTrad_SDA}
+\includegraphics[width=0.85\textwidth]{figNTrad_SDA}
 \caption{\label{figNTrad_SDA}
 Температурна залежність оберненого нахилу ВАХ для ВТСК (1--3)
 та НТСК (4).
@@ -1043,23 +1065,7 @@ $E_{00}$, меВ: 80 (A), 30 (B), 23.5 (C), 17.8 (D), 15 (E), 12 (F).
 \end{figure}
 
 
-\begin{table}
-\caption{Параметри, визначені з ВАХ структур Al---$n$--$n^+$--Si в наближенні теорії DAT}
-\label{tabSDAParRad:DAT}
-\centering
-\begin{tabular}{|l|c|c|c|}
-\hline
-$D$, рад &10$^6$ \textsuperscript{ a)}&10$^7$ \textsuperscript{ a)}&10$^7$ \textsuperscript{ б)}\\ \hline
-Діапазон температур, K&120$\div$240&110$\div$130&110$\div$210\\
-$E_{00}$, мВ&$17,8\pm0,5$&$23,5\pm0,5$&$80\pm10$\\
-$\chi_\mathrm{calc}$, $10^{-3}$ K$^{-1}$&$39\pm3$&$26\pm2$&$8\pm1$\\
-$\chi_\mathrm{fit}$, $10^{-3}$ K$^{-1}$&$73\pm6$&$42\pm4$&$8\pm1$\\
-$I_{s0}$, $10^{-14}$A&$5\pm0,5$&$13\pm3$&$(17\pm2)\cdot10^{5}$\\
-\hline
-\multicolumn{4}{l}{\textsuperscript{ a)}\emph{для високотемпературної компоненти струму}}\\
-\multicolumn{4}{l}{\textsuperscript{ б)}\emph{для низькотемпературної компоненти струму}}\\
-\end{tabular}
-\end{table}
+
 
 При ТПЕ струм насичення через ДШ описується виразом \cite{Rhoderick1988, Roul}
 \begin{equation}\label{eqIs:TFE}
@@ -1087,7 +1093,7 @@ $\beta$ --- температурний коефіцієнт зниження $\P
 
 \begin{figure}
 \center
-\includegraphics[width=0.9\textwidth]{figIsTrad_SDA}
+\includegraphics[width=0.95\textwidth]{figIsTrad_SDA}
 \caption{\label{figIsTrad_SDA}
 Температурні залежності струму насичення ВТКС (а, незаповнені точки)
 та НТКС (б, напівзаповнені точки).
@@ -1115,6 +1121,16 @@ $1,7\cdot10^{-8}$~(C)
 
 \subsection{Перенесення заряду в $\gamma$--опромінених структурах Al---$n$--$n^+$--Si при зворотному зміщенні}
 
+\begin{figure}[b]
+\center
+\includegraphics[width=0.65\textwidth]{figIV_SDArRad}
+\caption{\label{figIV_SDArRad}
+Зворотні характеристики структур SSDA при температурах 130~K (незаповнені точки)
+та 330~K (напівзаповнені точки).
+$D$, рад: 0 (квадрати), $10^6$ (трикутники), $10^7$ (кола)
+}%
+\end{figure}
+
 Приклади зворотних ВАХ досліджуваних структур при низьких та високих температурах наведено на рис.~\ref{figIV_SDArRad}.
 Видно, що $\gamma$--опромінення з $D=10^6$~рад
 \begin{enumerate}[label=\asbuk*),leftmargin=0em,itemindent=1.5em]
@@ -1126,15 +1142,7 @@ $1,7\cdot10^{-8}$~(C)
 водночас при великих зміщеннях ($V_R>2$~В) струм практично перестає залежати від температури, зростаючи при цьому приблизно на порядок порівняно з вихідними зразками.
 
 
-\begin{figure}
-\center
-\includegraphics[width=0.65\textwidth]{figIV_SDArRad}
-\caption{\label{figIV_SDArRad}
-Зворотні характеристики структур SSDA при температурах 130~K (незаповнені точки)
-та 330~K (напівзаповнені точки).
-$D$, рад: 0 (квадрати), $10^6$ (трикутники), $10^7$ (кола)
-}%
-\end{figure}
+
 
 Проведений аналіз показав, що вираз (\ref{eqIr}), який використовувався для опису зворотних гілок ВАХ неопромінених структур,
 не може з достатньою точністю відтворити температурну та польову залежності $I_R$ в Al---$n$--$n^+$--Si після опромінення.
@@ -1154,7 +1162,16 @@ I_R(T,V_R)&=&C_\mathrm{TE}(V_R)T^2\exp\left[-\frac{E_\mathrm{TE}(V_R)}{kT}\right
 Це є свідченням, що у цьому випадку вплив неоднорідностей
 на термоемісійний зворотній струм менш суттєвий, а польове зниження ВБШ пов’язане з дією сил зображення \cite{Rhoderick1988,Andrews}.
 
-Температуро--незалежна компонента $I_\mathrm{FN}$ незалежно від ступеня опромінення має тунельний характер --- див. рис.~\ref{figIrTErad_SDA},
+\begin{figure}
+\center
+\includegraphics[width=0.65\textwidth]{figIrTErad_SDA}
+\caption{\label{figIrTErad_SDA}
+Польові залежності характеристичної енергії ТЕ складової зворотного струму структур g6SSDA (трикутники) та g7SSDA (кола).
+Точки --- експеримент, прямі --- лінійна апроксимація за методом найменших квадратів
+}%
+\end{figure}
+
+Температуро--незалежна компонента $I_\mathrm{FN}$ незалежно від ступеня опромінення має тунельний характер --- див. рис.~\ref{figIrFNrad_SDA},
 причому її нахил у координатах Фаулера--Нордгейма однаковий.
 Згідно з (\ref{eqFowlNord}) та (\ref{eqFN:Et}) це свідчить про те, що тунелювання відбувається через один і той самий дефектний рівень $E_c-E_t=120$~меВ.
 З іншого боку,
@@ -1167,19 +1184,11 @@ I_R(T,V_R)&=&C_\mathrm{TE}(V_R)T^2\exp\left[-\frac{E_\mathrm{TE}(V_R)}{kT}\right
 Виявлена стабільність С$_i$ у досліджених структурах може бути пов'язана з процесами просторового розділення різнойменно--заряджених дефектів, які раніше виявлені при $\gamma$--опроміненні бар’єрних структур \cite{Muzafarova}.
 Таким чином, струм $I_\mathrm{FN}$ може бути пов'язаний з прямим  тунелюванням через глибокий рівень С$_i$.
 
-\begin{figure}
-\center
-\includegraphics[width=0.65\textwidth]{figIrTErad_SDA}
-\caption{\label{figIrTErad_SDA}
-Польові залежності характеристичної енергії ТЕ складової зворотного струму структур g6SSDA (трикутники) та g7SSDA (кола).
-Точки --- експеримент, прямі --- лінійна апроксимація за методом найменших квадратів
-}%
-\end{figure}
 
 
 \begin{figure}
 \center
-\includegraphics[width=0.65\textwidth]{figIrFNrad_SDA}
+\includegraphics[width=0.6\textwidth]{figIrFNrad_SDA}
 \caption{\label{figIrFNrad_SDA}
 Залежність температуро--незалежної компоненти зворотного струму
 в координатах Фаулера--Нордгейма
@@ -1202,7 +1211,7 @@ $P(F_m,\,T)=P(0,\,T) \exp(F_m^2/F_0^2)$,
 де $F_0$ --- деяке характеристичне значення напруженості.
 Саме така залежність спостерігається для $I_\mathrm{MPT}$ (рис.~\ref{figIrPATrad_SDA}).
  Показано \cite{Bulyarskii2001r,Ganichev1997,Ganichev:2000}, що коефіцієнт нахилу $F_0$ має залежати від температури:
- 
+
 \begin{equation}\label{eqPAT}
     F_0^{\,-2/3}=\left[\frac{d(\ln I_\mathrm{MPT})}{d(F_m^2)}\right]^{1/3}\propto \sqrt[3]{\frac{q^2\hbar^2}{24k^3m^*}}\,\frac{1}{T}\,.
 \end{equation}
@@ -1248,7 +1257,7 @@ $q^2\hbar^2/(24k^3m^*)=1,7\cdot10^{-3}$~K$\cdot$м$^{2/3}$$\cdot$В$^{-2/3}$.
 
 \begin{figure}
 \center
-\includegraphics[width=0.65\textwidth]{figeIrRad_SDA}
+\includegraphics[width=0.75\textwidth]{figeIrRad_SDA}
 \caption{\label{figeIrRad_SDA}
 Температурні залежності відносних внесків у зворотний струм
 структур g6SSDA (a) та g7SSDA (б)
@@ -1423,7 +1432,9 @@ $f_\mathtt{US}$, МГц: 9,6 (SSDA, g6SSDA, g7SSDA), 30,1 (SSDA).
   \Delta n_{\mathrm{id}} (\Phi_b^0=const)&=&1+\frac{q\sigma_{\Phi0,in}^2}{3kV_{bb}T}-1-\frac{q\sigma_{\Phi0,\mathtt{US}}^2}{3kV_{bb}T}=\\
   &=&\frac{q\left(\sigma^2_{\Phi0,in}-\sigma^2_{\Phi0,\mathtt{US}}\right)}{3kV_{bb}T}=-\frac{2\Delta \Phi_b}{3V_{bb}}.
 \end{eqnarray*}
+
 Якщо ж незмінним залишається стандартне відхилення висоти бар'єру, то
+
 \begin{eqnarray*}
   \Delta \Phi_b (\sigma_{\Phi0}=const)&=&\Phi_{b,in}^0-\Phi_{b,\mathtt{US}}^0,\\
   V_{bb,in}-V_{bb,\mathtt{US}}&=&\Delta \Phi_b,\\
